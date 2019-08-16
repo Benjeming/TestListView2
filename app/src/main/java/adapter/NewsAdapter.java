@@ -51,11 +51,11 @@ public class NewsAdapter extends BaseAdapter {
 
             convertView = LayoutInflater.from(mContext).inflate(R.layout.item_list, null);
 
-            viewHodler.textView =(TextView) convertView.findViewById(R.id.item_hello);
+            viewHodler.textView = (TextView) convertView.findViewById(R.id.item_hello);
             viewHodler.textView.setTextSize(16);
             viewHodler.textView.setGravity(1);
             convertView.setTag(viewHodler);
-        }else {
+        } else {
             //如果不将值传给 viewHodler,将会报空指针异常
             viewHodler = (ViewHodler) convertView.getTag();
         }

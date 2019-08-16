@@ -1,7 +1,12 @@
 package domain;
 
-public class NewsTitle {
-    private  String title;
+import android.os.Parcel;
+import android.os.Parcelable;
+
+import java.io.Serializable;
+
+public class NewsTitle implements Serializable {
+    private String title;
 
     public NewsTitle() {
     }
@@ -17,4 +22,6 @@ public class NewsTitle {
     public void setTitle(String title) {
         this.title = title;
     }
+
+
 }
